@@ -1603,7 +1603,7 @@ const SITE_DATA = {
       "relative_path": "2025/[2025-04-07]不完美的回答1.pdf",
       "ext": "pdf",
       "file_size_kb": 356.8,
-      "file": "2025/[2025-04-07]不完美的回答1.pdf"
+      "file": "2025/[2025-04-07]上了深刻的一课.pdf"
     },
     {
       "title": "拍马赶到",
