@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鸡哥知识库 · 一位犀利投资者的长期主义洞察</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="鸡哥知识库 - 近6年697篇深度投资分析文章，涵盖房地产、美股实战、投资日记与人生思考">
+  <meta name="theme-color" content="#c45c26">
+</head>
+<body data-page="home">
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">📚 <span>鸡哥</span>知识库</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="articles.html">全部文章</a></li>
+        <li><a href="category.html?cat=天机奇谈">天机奇谈</a></li>
+        <li><a href="category.html?cat=2025">2025合集</a></li>
+        <li><a href="category.html?cat=投资心得">投资心得</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="搜索文章..." aria-label="搜索文章" />
+      </div>
+      <!-- 暗色模式切换按钮由JS动态注入 -->
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero 主标题区 -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">KNOWLEDGE BASE</div>
+      <h1>探索<span class="hl">鸡哥</span>的投资世界</h1>
+      <p>近6年、697篇深度分析文章<br>涵盖房地产、美股实战、投资日记与人生思考</p>
+
+      <!-- 年份统计（JS动态填充）-->
+      <div class="stats-row" id="year-stats"></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 数据概览横幅 -->
+    <section class="overview-banner">
+      <div class="ob-grid">
+        <div class="ob-item">
+          <span class="ob-num" id="stat-total">0</span>
+          <span class="ob-label">收录文章</span>
+        </div>
+        <div class="ob-item">
+          <span class="ob-num">6</span>
+          <span class="ob-label">内容分类</span>
+        </div>
+        <div class="ob-item">
+          <span class="ob-num">6+</span>
+          <span class="ob-label">跨越年份</span>
+        </div>
+        <div class="ob-item">
+          <span class="ob-num">~200万</span>
+          <span class="ob-label">总字数估算</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section>
+      <h2 class="section-title"><span class="emoji">🗂️</span> 内容分类</h2>
+      <p class="section-subtitle">按主题浏览，快速找到你感兴趣的内容</p>
+      <div class="category-grid" id="category-grid">
+
+        <div class="cat-card" data-cat="天机奇谈">
+          <span class="cat-icon">🏠</span>
+          <div class="cat-name">天机奇谈</div>
+          <div class="cat-desc">房地产专题深度分析系列。从万科到恒大，从房企暴雷到行业洗牌，近4年的房地产江湖全记录。</div>
+          <span class="cat-count">271 篇 →</span>
+        </div>
+
+        <div class="cat-card" data-cat="2024-2023">
+          <span class="cat-icon">📅</span>
+          <div class="cat-name">投资日记</div>
+          <div class="cat-desc">2022-2024年投资记录与市场观察。每日更新，记录市场波动与个人思考。</div>
+          <span class="cat-count">177 篇 →</span>
+        </div>
+
+        <div class="cat-card" data-cat="2025">
+          <span class="cat-icon">📖</span>
+          <div class="cat-name">2025年合集</div>
+          <div class="cat-desc">2025年每日更新的完整合集。包含PDF原文、HTML版本和配图截图。</div>
+          <span class="cat-count">162 篇 →</span>
+        </div>
+
+        <div class="cat-card" data-cat="2026">
+          <span class="cat-icon">✨</span>
+          <div class="cat-name">最新文章</div>
+          <div class="cat-desc">2025年底至2026年最新内容。含PDF和TXT格式，最新的投资思考。</div>
+          <span class="cat-count">63 篇 →</span>
+        </div>
+
+        <div class="cat-card" data-cat="投资心得">
+          <span class="cat-icon">💡</span>
+          <div class="cat-name">投资心得</div>
+          <div class="cat-desc">投资方法论与心法精选。选择比努力重要、对抗时间的最优解等核心思考。</div>
+          <span class="cat-count">19 篇 →</span>
+        </div>
+
+        <div class="cat-card" data-cat="美元资产">
+          <span class="cat-icon">💵</span>
+          <div class="cat-name">美元资产</div>
+          <div class="cat-desc">美股、美债等美元资产投资分析。从伯克希尔到科技股的实战记录。</div>
+          <span class="cat-count">5 篇 →</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AI 问答组件 -->
+    <section id="ai-chat-section">
+      <div class="ai-card" id="ai-card">
+        <div class="ai-card-header">
+          <span class="ai-badge">AI 问答</span>
+          <div class="ai-card-title-row">
+            <span class="ai-icon">☕</span>
+            <span class="ai-card-title">鸡哥下午茶</span>
+            <span class="ai-beta-tag">BETA</span>
+          </div>
+          <p class="ai-card-desc">有投资上的困惑？拉把椅子，和鸡哥的AI助手聊聊。<br>每个回答都有知识库原文溯源。</p>
+        </div>
+        
+        <div class="ai-card-body">
+          <div class="ai-suggestions">
+            <button class="ai-chip" onclick="openAiChat('房价还会跌吗？什么时候可以抄底？')">🏠 房价还会跌吗？</button>
+            <button class="ai-chip" onclick="openAiChat('现在该买什么股票比较好？')">📈 买什么股票好？</button>
+            <button class="ai-chip" onclick="openAiChat('普通人的投资策略应该是什么？')">💡 普通人怎么投资？</button>
+            <button class="ai-chip" onclick="openAiChat('美股和A股哪个更适合长期持有？')">🌏 美股还是A股？</button>
+          </div>
+          <button class="ai-start-btn" id="ai-start-btn" onclick="toggleAiChat()">
+            开始对话 →
+          </button>
+        </div>
+
+        <!-- 聊天面板（默认隐藏） -->
+        <div class="ai-chat-panel" id="ai-chat-panel" style="display:none;">
+          <div class="ai-chat-messages" id="ai-chat-messages"></div>
+          <div class="ai-chat-input-area">
+            <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="输入你的问题..." onkeydown="if(event.key==='Enter')sendAiMessage()" />
+            <button class="ai-send-btn" onclick="sendAiMessage()">发送</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色功能介绍 -->
+    <section>
+      <h2 class="section-title"><span class="emoji">✨</span> 功能特色</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🔍</span>
+          <div class="feature-title">全文检索</div>
+          <div class="feature-desc">697篇文章一键搜索<br>快速定位你想要的内容</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📅</span>
+          <div class="feature-title">时间线浏览</div>
+          <div class="feature-desc">按时间顺序排列<br>见证每一笔决策的前因后果</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🏷️</span>
+          <div class="feature-title">分类归档</div>
+          <div class="feature-desc">六大分类体系清晰组织<br>想看什么一目了然</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新文章预览 -->
+    <section>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+        <h2 class="section-title" style="margin:0;"><span class="emoji">🆕</span> 最新文章</h2>
+        <a href="articles.html" style="font-size:14px;font-weight:500;color:#c45c26;display:flex;align-items:center;gap:4px;">查看全部 →</a>
+      </div>
+      <div id="latest-articles" class="article-list"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>📚 鸡哥知识库 &copy; 2026 · 内容来源于微信公众号博主「鸡哥」</p>
+    <p style="margin-top:8px;">本站为非营利性知识整理项目 · 用 <span class="footer-heart">♥</span> 构建</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" title="回到顶部">↑</button>
+
+  <!-- 先加载数据，再加载逻辑 -->
+  <script src="js/data.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

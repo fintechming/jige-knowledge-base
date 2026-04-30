@@ -1,0 +1,22 @@
+# 依赖
+node_modules/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 临时文件
+*.log
+npm-debug.log*
+
+# 部署时不需要的文件（仅保留site目录即可部署）
+gen_pptx.js
+特医食品科普教育.pptx
+package-lock.json

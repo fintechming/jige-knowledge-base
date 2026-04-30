@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全部文章 · 鸡哥知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="articles">
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">📚 <span>鸡哥</span>知识库</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="articles.html" class="active">全部文章</a></li>
+        <li><a href="category.html?cat=天机奇谈">天机奇谈</a></li>
+        <li><a href="category.html?cat=2025">2025合集</a></li>
+        <li><a href="category.html?cat=投资心得">投资心得</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="搜索文章..." aria-label="搜索文章" />
+      </div>
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- 归档页面主内容 -->
+  <main class="container archive-page">
+
+    <!-- 页面标题 -->
+    <header style="padding:24px 0 10px;">
+      <h1 style="font-size:28px;font-weight:800;">📋 全部文章归档</h1>
+      <p style="font-size:14px;color:#888;margin-top:6px;" id="result-info">加载中...</p>
+    </header>
+
+    <!-- 年份导航条 (sticky) -->
+    <div id="year-nav-bar" class="year-nav-bar"></div>
+
+    <!-- 分类标签栏 -->
+    <div id="cat-tags-bar" class="cat-tags-bar"></div>
+
+    <!-- 时间线主体 -->
+    <div id="timeline-container"></div>
+
+    <!-- 分页 -->
+    <div id="pagination" class="pagination"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>📚 鸡哥知识库 &copy; 2026 · 内容来源于微信公众号博主「鸡哥」</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" title="回到顶部">↑</button>
+
+  <script src="js/data.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

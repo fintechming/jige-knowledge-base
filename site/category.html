@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分类浏览 · 鸡哥知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="category">
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">📚 <span>鸡哥</span>知识库</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="articles.html">全部文章</a></li>
+        <li><a href="category.html?cat=天机奇谈">天机奇谈</a></li>
+        <li><a href="category.html?cat=2025">2025合集</a></li>
+        <li><a href="category.html?cat=投资心得">投资心得</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- 分类内容 -->
+  <main class="container archive-page" style="padding-top:30px;">
+    <header style="padding:10px 0 20px;" id="category-title-area">
+      <h1>分类浏览</h1>
+      <p>加载中...</p>
+    </header>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+      <span id="cat-result-info" style="font-size:14px;color:#888;"></span>
+      <a href="index.html" style="font-size:14px;color:#c45c26;">← 返回首页</a>
+    </div>
+
+    <div id="category-timeline"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>📚 鸡哥知识库 &copy; 2026 · 内容来源于微信公众号博主「鸡哥」</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" title="回到顶部">↑</button>
+
+  <script src="js/data.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
